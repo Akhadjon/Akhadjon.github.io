@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const counter2 = (function(){
+    let  count = 0;
+    function add(){
+        count += 1;
+        return count
+    }
+
+    function reset(){
+        count = 0;
+        return count
+    }
+
+    function make_adder(number){
+        count += number;
+        return count;
+    }
+
+    return obje={
+        increment: function(){
+            add();
+        },
+        reset: function(){
+           reset();
+        },        
+        value: function(n){
+            return count;
+        }
+    }
+
+})();
+    </script>
+</body>
+</html>

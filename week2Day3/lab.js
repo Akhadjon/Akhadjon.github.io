@@ -53,22 +53,22 @@ const counter2 = (function(){
         return count;
     }
 
-    return {
+    return obje={
         increment: function(){
             add();
         },
         reset: function(){
            reset();
-        },
-        value: function(){
+        },        
+        value: function(n){
             return count;
         }
     }
 
 })();
 
+console.log(counter2.obje.value(3));
 
-//4;
 // Create module which contains private data and fucntion add them public function as clouse 
 
 const Employe = (function(){
